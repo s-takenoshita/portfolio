@@ -1,0 +1,22 @@
+:root {
+  --my-hue: 200;
+}
+
+body {
+  background: hsl(var(--my-hue), 40%, 95%);
+}
+
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content:center;
+  background: hsl(var(--my-hue), 40%, 80%);
+  height: 200px;
+}
+header img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
