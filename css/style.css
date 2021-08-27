@@ -1,22 +1,58 @@
+/* common */
+
 :root {
   --my-hue: 200;
 }
-
+h1, h2, h3 {
+  font-weight: normal;
+  color: rgb(80, 80, 80);
+}
+img {
+  vertical-align: bottom;
+}
 body {
   background: hsl(var(--my-hue), 40%, 95%);
-}
-
-body {
   margin: 0;
 }
+
 header {
-  display: flex;
-  justify-content:center;
   background: hsl(var(--my-hue), 40%, 80%);
   height: 200px;
+}
+header .container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 header img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+}
+
+/* main */
+main {
+  width: 800px;
+  margin: 0 auto;
+  /* text-align: center; */
+  /* outline: 1px solid orange; */
+}
+main h1 {
+  color: white;
+  text-align: center;
+  background: hsl(var(--my-hue), 40%, 40%);
+}
+.history {
+  display: flex;
+  padding-bottom: 20px;
+  border-top: 1px solid;
+}
+.yaer {
+  width: 100px;
+}
+.language {
+  width: 100px;
+}
+.description {
+  flex: 1;
 }
