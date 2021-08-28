@@ -21,7 +21,7 @@ body {
 /* header */
 header {
   background: hsl(var(--my-hue), 40%, 80%);
-  height: 200px;
+  height: 250px;
   margin-bottom: 16px;
 }
 header .container {
@@ -30,8 +30,17 @@ header .container {
   text-align: center;
 }
 header img {
+  padding: 16px;
   width: 64px;
   height: 64px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-radius 0.4s;
+}
+.img_changed {
+  border-radius: 20%;
+}
+.img_changed_back {
   border-radius: 50%;
 }
 
