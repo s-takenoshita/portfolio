@@ -3,7 +3,9 @@
 // headerのイメージをクリックした時
 
 let sw = true;
-console.log(sw);
+let d = new Date();
+console.log(d);
+console.log(d.getTime());
 
 function process() {
   if (sw) {

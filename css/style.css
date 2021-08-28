@@ -2,10 +2,11 @@
 
 :root {
   --my-hue: 200;
+  color: rgb(80, 80, 80);
+
 }
 h1, h2, h3 {
   font-weight: normal;
-  color: rgb(80, 80, 80);
 }
 
 img {
@@ -59,16 +60,18 @@ nav {
 }
 ul {
   list-style: none;
-  background: white;
   margin: 0;
   padding: 0;
 }
 li {
-  padding: 8px 16px;
-
+  padding: 4px 16px;
+  margin-bottom: 4px;
+  border-left: 4px solid indianred;
+  cursor: pointer;
 }
 .main-container {
   flex: 1;
+  background: white;
 }
 main h1 {
   color: white;
@@ -79,20 +82,23 @@ main h1 {
 .history {
   display: flex;
   padding-bottom: 20px;
-  border-top: 1px solid;
+  border-top: 1px solid gray;
 }
 .yaer {
   width: 100px;
+  padding-left: 8px;
 }
 .language {
   width: 100px;
 }
 .description {
   flex: 1;
+  padding-right: 8px;
 }
 
 /* footer */
 footer {
+  margin-top: 16px;
   background: hsl(var(--my-hue), 40%, 80%);
   height: 150px;
   text-align: center;
