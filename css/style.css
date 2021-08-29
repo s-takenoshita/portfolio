@@ -38,11 +38,8 @@ header img {
   cursor: pointer;
   transition: border-radius 0.4s;
 }
-.img_changed {
+.changeradius {
   border-radius: 20%;
-}
-.img_changed_back {
-  border-radius: 50%;
 }
 
 /* main */
@@ -68,6 +65,10 @@ li {
   margin-bottom: 4px;
   border-left: 4px solid indianred;
   cursor: pointer;
+}
+li.color {
+  background: rgb(250, 200, 200);
+  color: white;
 }
 .main-container {
   flex: 1;

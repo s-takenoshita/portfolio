@@ -9,9 +9,10 @@
 <body>
   <header>
     <div class="container">
-      <img src="image/takenoko.png" alt="" id="takenoko">
+      <img src="image/takenoko.png" alt="" id="takenoko" title="筍のように伸びる！">
       <h1>ポートフォリオ</h1>
       <p id="header_text">フリーランスを目指し勉強中のアラフィフです。</p>
+      <button>button</button>
     </div>
   </header>
   <main>
@@ -24,7 +25,7 @@
     </nav>
     <div class="main-container">
 
-      <section class="profile">
+      <section class="profile" id="profile">
         <h1>経歴</h1>
         <div class="history">
           <div class="yaer">1985～</div>
@@ -42,7 +43,7 @@
         </div>
         <div class="history">
           <div class="yaer">1995～</div>
-          <div class="language">COBOL  VisualBasic Windows</div>
+          <div class="language">COBOL  VisualBasic Oracle Windows</div>
           <div class="description">
             公共機関向けの業務システムの開発、運用、保守。公共機関向けなので、いわゆるレガシー的システム。<br>VisualBasicでは、家の図面を書くことで税金の基礎となる評価額を計算するシステムを開発。
           </div>
@@ -72,10 +73,10 @@
       </section>
     </div>
   </main>
-  <footer>Footer</footer>
-  <script>
-    console.log('Hello World html');
-  </script>
+  <footer>
+    <p>Footer</p>
+    <p id="date"></p>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
