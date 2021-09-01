@@ -5,6 +5,8 @@
   <title>ポートフォリオ</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="image/takenoko.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -12,7 +14,11 @@
       <img src="image/takenoko.png" alt="" id="takenoko" title="筍のように伸びる！">
       <h1>ポートフォリオ</h1>
       <p id="header_text">フリーランスを目指し勉強中のアラフィフです。</p>
-      <button>button</button>
+    </div>
+    <button>button</button>
+    <div class="sp-menu">
+      <span class="material-icons" id="open-menu">menu</span>
+      <!-- <span class="material-icons">close</span> -->
     </div>
   </header>
   <main>
@@ -25,54 +31,43 @@
     </nav>
     <div class="main-container">
 
+      <h1>経歴</h1>
       <section class="profile" id="profile">
-        <h1>経歴</h1>
-        <div class="history">
-          <div class="yaer">1985～</div>
-          <div class="language">C Unix</div>
-          <div class="description">
-            大手電機メーカーが開発するワープロの開発。
-          </div>
-        </div>
-        <div class="history">
-          <div class="yaer">1990～</div>
-          <div class="language">C++ Macintosh</div>
-          <div class="description">
-            教育用（数学）のゲーム開発。画面に命令を入力し、亀を動かすゲーム。プログラミングの基本も理解できます。
-          </div>
-        </div>
-        <div class="history">
-          <div class="yaer">1995～</div>
-          <div class="language">COBOL  VisualBasic Oracle Windows</div>
-          <div class="description">
-            公共機関向けの業務システムの開発、運用、保守。公共機関向けなので、いわゆるレガシー的システム。<br>VisualBasicでは、家の図面を書くことで税金の基礎となる評価額を計算するシステムを開発。
-          </div>
-        </div>
-        <div class="history">
-          <div class="yaer">2000～</div>
-          <div class="language"></div>
-          <div class="description">
-            ここから管理職となり、システムの開発や導入、保守のマネージャーを担当。プログラミングの実務から離れます。
-          </div>
-        </div>
-        <div class="history">
-          <div class="yaer">2005～</div>
-          <div class="language"></div>
-          <div class="description">
-            このころから企画、マーケティング的な職務となり、ますますプログラミングから遠ざかっていきました。
-          </div>
-        </div>
-        <div class="history">
-          <div class="yaer">2010～</div>
-          <div class="language">Salesforce</div>
-          <div class="description">
-            このころSalesforceに出会い衝撃を受けました。早々自社に導入し運用を始めました。最初のころは顧客問い合わせ案件の管理から始め、徐々独自開発を進め、今では社内の基幹的システムになりました。今でも、私が運用の面倒を見ています。
-          </div>
-        </div>
-        
+        <ul>
+          <li class="history">
+            <p class="yaer">1985～</p>
+            <p class="language">C Unix</p>
+            <p class="description">大手電機メーカーが開発するワープロの開発。</p>
+            <p class="detail">詳細</p>
+          </li>
+          <li class="history">
+            <p class="yaer">1990～</p>
+            <p class="language">C++ Macintosh</p>
+            <p class="description">教育用（数学）のゲーム開発。画面に命令を入力し、亀を動かすゲーム。プログラミングの基本も理解できます。</p>
+            <p class="detail">詳細</p>
+          </li>
+          <li class="history">
+            <p class="yaer">1995～</p>
+            <p class="language">COBOL  VisualBasic Oracle Windows</p>
+            <p class="description">公共機関向けの業務システムの開発、運用、保守。公共機関向けなので、いわゆるレガシー的システム。<br>VisualBasicでは、家の図面を書くことで税金の基礎となる評価額を計算するシステムを開発。</p>
+            <p class="detail">詳細</p>
+          </li>
+          <li class="history">
+            <p class="yaer">2000～</p>
+            <p class="language"></p>
+            <p class="description">ここから管理職となり、システムの開発や導入、保守のマネージャーを担当。プログラミングの実務から離れます。</p>
+            <p class="detail">詳細</p>
+          </li>
+        </ul>
       </section>
     </div>
   </main>
+  <div id="open">詳細</div>
+  <div id="mask" class="hidden"></div>
+  <section id="modal" class="hidden">
+    <p>詳細情報を表示</p>
+    <div id="close">close</div>
+  </section>
   <footer>
     <p>Footer</p>
     <p id="date"></p>

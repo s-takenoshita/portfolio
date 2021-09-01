@@ -22,8 +22,11 @@ body {
 /* header */
 header {
   background: hsl(var(--my-hue), 40%, 80%);
-  height: 250px;
-  margin-bottom: 16px;
+  /* width: 1000px; */
+  max-width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 header .container {
   width: 400px;
@@ -45,10 +48,9 @@ header img {
 /* main */
 main {
   display: flex;
-  width: 1000px;
+  /* width: 1000px; */
+  max-width: 1000px;
   margin: 0 auto;
-  /* text-align: center; */
-  /* outline: 1px solid orange; */
 }
 
 nav {
@@ -60,7 +62,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-li {
+nav > ul > li {
   padding: 4px 16px;
   margin-bottom: 4px;
   border-left: 4px solid indianred;
@@ -82,7 +84,6 @@ main h1 {
 }
 .history {
   display: flex;
-  padding-bottom: 20px;
   border-top: 1px solid gray;
 }
 .yaer {
@@ -96,6 +97,11 @@ main h1 {
   flex: 1;
   padding-right: 8px;
 }
+.detail {
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
 
 /* footer */
 footer {
@@ -104,4 +110,64 @@ footer {
   height: 150px;
   text-align: center;
   font-size: 18px;
+}
+
+/* modal window */
+#open, #close {
+  width: 200px;
+  padding: 12px 0;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#modal {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+#mask.hidden {
+  display: none;
+}
+#modal.hidden {
+  transform:translate(0, -500px)
+}
+
+.sp-menu {
+  margin-top: 8px;
+  margin-left: 16px;
+  display: none;
+}
+.sp-menu #open-menu {
+  font-size: 32px;
+  cursor: pointer;
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
+  margin: 0 auto;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:480px) {
+  header .sp-menu {
+    display: block;
+  }
+  main > nav {
+    display: none;
+  }
 }
