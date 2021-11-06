@@ -1,5 +1,5 @@
-## portfolio
-私のポートフォリオです。
+## markdown
+markdown記法の練習。
 
 ## Sample code
 ```
