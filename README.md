@@ -4,7 +4,7 @@
 ## titel2
 ああああああああああああああ
 
-\\\
+```
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,4 +12,4 @@
     <title>othello</title>
   <link rel="stylesheet" href="style.css">
 </head>
-\\\
+```
