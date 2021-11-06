@@ -1,7 +1,7 @@
 ## portfolio
 私のポートフォリオです。
 
-## サンプルコード
+## Sample code
 ```
 <!DOCTYPE html>
 <html lang="ja">
